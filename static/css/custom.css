@@ -1,0 +1,42 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+.options{
+color:black;
+padding-right:100px;
+width: calc(100% - 100px);
+}
+.top-space{
+margin-top:200px;
+}
+.tool{
+
+
+padding:50px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+color:black;
+font-size:18px;}
+
+.link{
+  text-decoration: underline;
+
+  text-align: right;
+  float:right;
+  }
+.green{
+  color:green;}
+.feat{
+ display: inline-block;
+
+font-family: 'Source Sans Pro';
+src: url("SourceSansPro-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+.fit{
+
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;}
+
+}

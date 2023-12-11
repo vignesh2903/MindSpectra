@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+     <!-- Site Metas -->
+    <title>Health Lab - Responsive HTML5 Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="static/css/pogo-slider.min.css">
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="static/css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+	<!-- LOADER -->
+     <!-- <div id="preloader">
+		<div class="loader">
+			<img src="images/preloader.gif" alt="" />
+		</div>
+    </div>end loader -->
+    <!-- END LOADER -->
+
+	<!-- Start top bar -->
+	<div class="main-top">
+		<!-- <div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="left-top">
+						<a class="new-btn-d br-2" href="#"><span>Book Appointment</span></a>
+						<div class="mail-b"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> demo@gmail.com</a></div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="wel-nots">
+						<p>Welcome to Our Health Lab!</p>
+					</div>
+					<div class="right-top">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	</div>
+	<!-- End top bar -->
+
+	<!-- Start header -->
+	<header class="top-header">
+		<nav class="navbar header-nav navbar-expand-lg navi">
+            <div class="container">
+				<!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a> -->
+				<a class="navbar-brand" href="index.html"><p>MindSpectra</p></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="{{url_for('home')}}">Home</a></li>
+                        <li><a class="nav-link" href="{{ url_for('home') }}#about">About Us</a></li>
+												<!-- <li><a class="nav-link" href="#appointment">Autism detect</a></li> -->
+						<li><a class="nav-link" href="{{ url_for('ap') }}">Approaches</a></li>
+                        <li><a class="nav-link" href="{{ url_for('mu') }}">Mu rhythm</a></li>
+						<li><a class="nav-link" href="{{ url_for('autism') }}">Autism detect</a></li>
+                        <!-- <li><a class="nav-link" href="#gallery">Gallery</a></li>
+						<li><a class="nav-link" href="#team">Doctor</a></li>
+                        <li><a class="nav-link" href="#blog">Blog</a></li> -->
+						<!-- <li><a class="nav-link" href="#contact">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	</header>
+	<!-- End header -->
+
+	<!-- Start Banner -->
+	<!-- <div class="ulockd-home-slider">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="pogoSlider" id="js-main-slider">
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(images/slider-01.jpg);">
+						<div class="lbox-caption pogoSlider-slide-element">
+							<div class="lbox-details">
+								<h1>Welcome da ASD</h1>
+								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum </p>
+								<a href="#" class="btn">Contact Us</a>
+							</div>
+						</div>
+					</div>
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(images/slider-02.jpg);">
+						<div class="lbox-caption pogoSlider-slide-element">
+							<div class="lbox-details">
+								<h1>We are Expert in The Field of Health Lab</h1>
+								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum</p>
+								<a href="#appointment" class="btn">Appointment</a>
+							</div>
+						</div>
+					</div>
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(images/slider-03.jpg);">
+						<div class="lbox-caption pogoSlider-slide-element">
+							<div class="lbox-details">
+								<h1>Welcome da ASD</h1>
+								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum </p>
+								<a href="#" class="btn">Contact Us</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			 </div>
+		</div>
+	</div>  -->
+	<!-- End Banner -->
+
+	<!-- Start About us -->
+	<div id="Mu rhythm" class="about-box">
+		<div class="about-a1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title-box">
+							<h2>Mu Rhythm</h2>
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="row align-items-center about-main-info">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<h2> Mu Rhythm </h2>
+								<p class="just slide-in from-left">The mu rhythm is a type of brainwave that is commonly observed in the region of the brain called the sensorimotor cortex. It is a low-frequency oscillation that typically occurs in the range of 8-13 Hz, known as alpha frequency band, and is often seen when an individual is at rest or in a relaxed state.
+
+</p>
+								<p class="just slide-in from-left">The mu rhythm is thought to reflect the neural activity of the motor cortex when it is not actively engaged in movement. It is often suppressed or desynchronized when a person performs a movement or observes someone else performing a movement, which is known as mu suppression. This phenomenon is thought to reflect the activity of the mirror neuron system, which is involved in the imitation of actions and the understanding of others' intentions.</p>
+								<!-- <a href="#" class="new-btn-d br-2">Read More</a> -->
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="about-m">
+									<ul class="banner">
+										<li>
+											<img class="fit just slide-in from-right" src="static/images/mu1.jpg" alt="">
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<p class="just slide-in from-right">Research has shown that individuals with autism spectrum disorder (ASD) often exhibit altered patterns of mu rhythm activity compared to typically developing individuals. Specifically, some studies have found that individuals with ASD show reduced mu suppression when observing others' movements, which suggests a deficit in the mirror neuron system. This reduced mu suppression may contribute to difficulties in social communication and interaction that are characteristic of ASD. For example, it may lead to difficulties in imitating others, understanding others' intentions, and forming social bonds.</p>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="row align-items-center about-main-info">
+
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="about-m">
+									<ul class="banner">
+										<li>
+											<img class="fit just slide-in from-left" src="static/images/mu2.png" alt="">
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-12">
+<!--								<h2> Welcome to Health Tool </h2>-->
+								<p class="just slide-in from-right">Sobi (Second Order Blind Identification) is a signal processing technique used to separate mixed signals into their constituent components without prior knowledge of the individual signals. The mu rhythm is a type of brain wave activity that occurs in the motor cortex and is associated with movement planning and execution.
+
+To use Sobi to find the mu rhythm, you would need to first record EEG (electroencephalogram) data from the motor cortex of the brain while the subject is at rest. Next, you would use Sobi to separate the mixed EEG signals into their individual components. One of these components may correspond to the mu rhythm.
+
+ </p>
+								<p class="just slide-in from-right">Once you have identified the component that corresponds to the mu rhythm, you can further analyze it to extract information about its properties, such as its frequency and amplitude. This information can be used to study the role of the mu rhythm in movement planning and execution, as well as to investigate possible abnormalities in the mu rhythm in neurological disorders such as Parkinson's disease.</p>
+								<!-- <a href="#" class="new-btn-d br-2">Read More</a> -->
+							</div>
+							<div class="form">
+<!--<form action="/classify" method="post">-->
+<!--								<input type="text" list="list1" id="input1" name="task">-->
+
+
+<!--									<datalist id="list1">-->
+<!-- 									 	<option value="AV">-->
+<!--										<option value="AV3">-->
+
+<!--									</datalist>-->
+
+<!--<input type="text" list="list2" id="input2" name="subject">-->
+<!--<datalist id="list2">-->
+<!--  <option value="TD1">-->
+<!--  <option value="TD2">-->
+<!--  <option value="AD2">-->
+<!--</datalist>-->
+
+<!--<input type="text" list="list3" id="input3" name="category">-->
+<!--<datalist id="list3">-->
+<!--  <option value="1">-->
+<!--  <option value="2">-->
+<!--  <option value="7">-->
+<!--</datalist>-->
+
+<!--<input type="text" list="list4" id="input4" name="channel" >-->
+<!--<datalist id="list4">-->
+<!--  <option value="C3-AV">-->
+<!--  <option value="C4-AV">-->
+<!--  <option value="CA-AV">-->
+<!--</datalist>-->
+
+
+<!--<input type="submit" value="Classify">-->
+<!--									 </form>-->
+
+							</div>
+						</div>
+						<div id= "upload" class="tool">
+							<h1 class="green">Mu Rhythm Detector</h1>
+							<br>
+						<h2>Upload CSV File</h2>
+
+    <form action="/up" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Detect</button>
+    </form>
+							</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<!-- End About us -->
+
+
+	<!-- Start Footer -->
+	<footer class="footer-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="footer-company-name">All Rights Reserved. &copy; 2023 <a href="#">MindSpectra</a> Design By : VIT ECE STUDENTS</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
+
+	<!-- ALL JS FILES -->
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/popper.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/jquery.pogo-slider.min.js"></script>
+	<script src="static/js/slider-index.js"></script>
+	<script src="static/js/smoothscroll.js"></script>
+	<script src="static/js/TweenMax.min.js"></script>
+	<script src="static/js/main.js"></script>
+	<script src="static/js/owl.carousel.min.js"></script>
+	<script src="static/js/form-validator.min.js"></script>
+    <script src="static/js/contact-form-script.js"></script>
+	<script src="static/js/isotope.min.js"></script>
+	<script src="static/js/images-loded.min.js"></script>
+    <script src="static/js/custom.js"></script>
+</body>
+</html>
